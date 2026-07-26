@@ -6,6 +6,8 @@ import { createContext, useContext, useState, useEffect } from "react";
 type ThemeContextType = {
   theme: string;
   toggleTheme: () => void;
+  layout: string;
+  setLayout: (value: string) => void;
 };
 
 // 2. Create the context (empty container for now)
@@ -14,6 +16,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 // 3. The Provider: holds the state and shares it
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState("light");
+  const [layout, setLayout] = useState("grid");
 
   // On first load, read saved theme from localStorage
   useEffect(() => {
@@ -22,6 +25,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       setTheme(saved);
     }
   }, []);
+  useEffect(() => {
+    const savedLayout = localStorage.getItem("layout");
+    if (savedLayout) {
+      setLayout(savedLayout);
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("layout", layout);
+  }, [layout]);
 
   // Whenever theme changes, apply it to <html> and save it
   useEffect(() => {
@@ -39,7 +51,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, layout, setLayout }}>
       {children}
     </ThemeContext.Provider>
   );
