@@ -40,9 +40,11 @@ npm run dev
 
 Then open [http://localhost:3000](http://localhost:3000).
 
+
+
 ## Project structure
 
-​```
+```text
 app/
 ├── layout.tsx        # Shared layout (header, nav, footer, providers)
 ├── page.tsx          # Home page
@@ -52,4 +54,4 @@ app/
 ├── components/       # Reusable UI (Header, Footer, NavBar, PostCard)
 ├── context/          # Theme and Posts state (Context + localStorage)
 └── data/             # Sample posts and navigation links
-​```
+```
