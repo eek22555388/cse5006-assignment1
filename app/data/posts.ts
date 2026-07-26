@@ -1,4 +1,16 @@
 export const posts = [
+
+  {
+    slug: "about-this-feed",
+    title: "About This Feed",
+    date: "2026-07-25",
+    image: "https://media.geeksforgeeks.org/wp-content/uploads/20211213172227/4.png",
+    summary: "A quick note on what this page is for and what it does right now.",
+    content: `This page is the reading surface for the project: a place to browse posts as cards, search them by title, open a full post, and create or remove your own. Each item has a title, date, summary, category, and image, laid out so it's quick to scan and easy to navigate on any screen size.
+
+  For now the posts are sample content, and your own additions are saved in the browser. In a later stage, this same interface will display live RSS feed items pulled in from a server.`,
+    category: "Workflow",
+  },
   {
     slug: "Daily News update",
     title: "Daily News update Melbourne— 20 July 2050",

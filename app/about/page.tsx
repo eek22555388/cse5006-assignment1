@@ -6,7 +6,7 @@ export default function About() {
       <section className="mb-8">
         <h3 className="text-xl font-semibold mb-2">Who made this</h3>
         <p className="text-slate-700 dark:text-slate-300">
-          Created by [Your Name] — Student Number 22555388, for CSE5006
+          Created by Erdi Erden Kekec — Student Number 22555388, for CSE5006
           Assessment 1.
         </p>
       </section>
@@ -30,11 +30,10 @@ export default function About() {
       <section className="mb-8">
         <h3 className="text-xl font-semibold mb-2">Where it&apos;s heading</h3>
         <p className="text-slate-700 dark:text-slate-300">
-          In Assessment 2, a server component will be added to accept and process
-          live RSS content. At that point, real feed items will replace the
-          sample posts and flow into this same interface — the frontend is
-          designed so that this change requires minimal rework. Cookies and
-          authentication will support user sessions in later stages.
+          In later stages, a backend and database will be added so that live RSS
+          feed items can be stored and displayed. Those items will flow into this
+          same interface, which has been built so that adding the backend
+          requires minimal rework to the frontend.
         </p>
       </section>
 

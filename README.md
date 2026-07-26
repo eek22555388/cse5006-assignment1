@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CSE5006 Assessment 1 — RSS Server Frontend
 
-## Getting Started
+A usability-focused frontend for an RSS Server that will feed content into a
+Learning Management System (LMS). This assessment covers the **frontend only** —
+sample blog posts stand in for RSS feed items so the focus stays on layout,
+navigation, usability, and responsive design. Backend and live RSS processing
+are added in later assessments.
 
-First, run the development server:
+**Author:** Erdi Erden Kekec — Student Number 22555388
+
+## Tech stack
+
+- **Next.js** (App Router) — bootstrapped with `npx create-next-app`
+- **React** — component-based UI
+- **TypeScript** — type-safe components
+- **Tailwind CSS** — styling, responsive design, and theming
+
+## Features
+
+- Home, About, Feeds, and Settings pages with shared header, footer, and navigation
+- Light and dark themes, saved in the browser (localStorage) so they persist
+- Responsive hamburger menu for compact screens, with an animated open/close
+- Feeds page showing posts as cards (title, date, summary, category, image)
+- Search to filter posts by title
+- Create and delete your own posts, saved in localStorage
+- Dynamic post pages with breadcrumb navigation
+- Adjustable feed layout (grid or list), also saved in the browser
+- Accessible markup: semantic HTML, ARIA labels, and alt text on images
+
+## Getting started
+
+Requires Node.js v22 or newer.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project structure
