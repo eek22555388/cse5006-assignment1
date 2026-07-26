@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+
 
 type Post = {
   slug: string;
@@ -13,11 +13,9 @@ type Post = {
 export default function PostCard({ post }: { post: Post }) {
   return (
     <article className="border border-slate-300 dark:border-slate-600 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-      <Image
+      <img
         src={post.image}
         alt={post.title}
-        width={400}
-        height={200}
         className="w-full h-40 object-cover"
       />
       <div className="p-5">

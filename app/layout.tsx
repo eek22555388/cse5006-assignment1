@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import { ThemeProvider } from "./context/ThemeContext";
+import { PostsProvider } from "./context/PostsContext";
 
 
 const geistSans = Geist({
@@ -34,10 +35,12 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100">
               <ThemeProvider>
-                <Header />
-                <NavBar />
-                <main className="flex-1">{children}</main>
-                <Footer />
+                <PostsProvider>
+                  <Header />
+                  <NavBar />
+                  <main className="flex-1">{children}</main>
+                  <Footer />
+                </PostsProvider>
               </ThemeProvider>
             </body>
     </html>
