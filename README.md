@@ -7,6 +7,7 @@ navigation, usability, and responsive design. Backend and live RSS processing
 are added in later assessments.
 
 **Author:** Erdi Erden Kekec — Student Number 22555388
+** GitHUB: ** https://github.com/eek22555388/cse5006-assignment1
 
 ## Tech stack
 
