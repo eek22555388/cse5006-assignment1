@@ -7,7 +7,8 @@ navigation, usability, and responsive design. Backend and live RSS processing
 are added in later assessments.
 
 **Author:** Erdi Erden Kekec — Student Number 22555388
-** GitHUB: ** https://github.com/eek22555388/cse5006-assignment1
+
+**Repository:** https://github.com/eek22555388/cse5006-assignment1
 
 ## Tech stack
 
@@ -32,20 +33,23 @@ are added in later assessments.
 
 Requires Node.js v22 or newer.
 
-```bash
+​```bash
 npm install
 npm run dev
-```
+​```
 
 Then open [http://localhost:3000](http://localhost:3000).
 
 ## Project structure
+
+​```
 app/
-layout.tsx Shared layout (header, nav, footer, providers)
-page.tsx Home page
-about/ About page
-feeds/ Feeds list, create page, and dynamic [slug] post pages
-settings/ Theme and layout preferences
-components/ Reusable UI (Header, Footer, NavBar, PostCard, etc.)
-context/ Theme and Posts state (React Context + localStorage)
-data/ Sample posts and navigation links
+  layout.tsx      Shared layout (header, nav, footer, providers)
+  page.tsx        Home page
+  about/          About page
+  feeds/          Feeds list, create page, and dynamic [slug] post pages
+  settings/       Theme and layout preferences
+  components/     Reusable UI (Header, Footer, NavBar, PostCard, etc.)
+  context/        Theme and Posts state (React Context + localStorage)
+  data/           Sample posts and navigation links
+​```
