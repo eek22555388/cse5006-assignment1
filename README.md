@@ -44,12 +44,12 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 ​```
 app/
-  layout.tsx      Shared layout (header, nav, footer, providers)
-  page.tsx        Home page
-  about/          About page
-  feeds/          Feeds list, create page, and dynamic [slug] post pages
-  settings/       Theme and layout preferences
-  components/     Reusable UI (Header, Footer, NavBar, PostCard, etc.)
-  context/        Theme and Posts state (React Context + localStorage)
-  data/           Sample posts and navigation links
+├── layout.tsx        # Shared layout (header, nav, footer, providers)
+├── page.tsx          # Home page
+├── about/            # About page
+├── feeds/            # Feeds list, create page, dynamic [slug] post pages
+├── settings/         # Theme and layout preferences
+├── components/       # Reusable UI (Header, Footer, NavBar, PostCard)
+├── context/          # Theme and Posts state (Context + localStorage)
+└── data/             # Sample posts and navigation links
 ​```
