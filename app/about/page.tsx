@@ -46,7 +46,14 @@ export default function About() {
 
         {/* VIDEO PLACEHOLDER — we'll replace this once you've recorded */}
         <div className="aspect-video w-full rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400">
-          Video coming soon
+          <video
+          controls
+          preload="metadata"
+          className="w-full rounded-lg"
+        >
+          <source src="/22555388_Assignment1_Recording.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         </div>
       </section>
     </div>
